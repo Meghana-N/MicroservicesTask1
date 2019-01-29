@@ -10,3 +10,5 @@ spring:
           search-paths:
             - 'track*'
             - 'user*'
+  application:
+    name: config-server

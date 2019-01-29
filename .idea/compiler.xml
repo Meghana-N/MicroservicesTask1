@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringBootZuulGatewayProxy" />
+        <module name="spring-config-server" />
+        <module name="spring-eureka-server" />
+        <module name="Muzix" />
+        <module name="User" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Muzix" target="11" />
+      <module name="spring-config-server" target="1.8" />
+      <module name="spring-eureka-server" target="1.8" />
+      <module name="SpringBootZuulGatewayProxy" target="11" />
+      <module name="User" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Muzix" options="-parameters" />
+      <module name="SpringBootZuulGatewayProxy" options="-parameters" />
+      <module name="User" options="-parameters" />
+      <module name="spring-config-server" options="-parameters" />
+      <module name="spring-eureka-server" options="-parameters" />
+    </option>
+  </component>
+</project>
