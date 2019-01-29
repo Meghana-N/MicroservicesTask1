@@ -1,0 +1,12 @@
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/service/TrackServiceImpl.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/contoller/TrackController.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/exception/ErrorClass.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/repository/TrackRepository.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/exception/TrackNotFoundExeption.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/config/TrackConfig.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/config/SwaggerConfig.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/domain/Track.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/MuzixApplication.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/exception/TrackAlreadyExistsException.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/exception/HeadExceptionController.java
+/home/user/Documents/microservices/muzix/src/main/java/com/stackroute/service/TrackService.java
