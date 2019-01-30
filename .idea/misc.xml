@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/spring-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootZuulGatewayProxy/pom.xml" />
         <option value="$PROJECT_DIR$/User/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>

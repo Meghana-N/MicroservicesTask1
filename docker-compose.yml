@@ -1,0 +1,67 @@
+version : "3"
+services:
+  spring-eureka-service:
+    image: eurekaservice-app
+    build: spring-eureka-server/
+    restart: always
+    network_mode: host
+    container_name: eureka-service-docker
+    ports:
+      - "8761:8761"
+    expose:
+      - 8761
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    container_name: mongo
+    network_mode: host
+
+  spring-config-server:
+    image: configservice-app
+    build: spring-config-server/
+    restart: always
+    network_mode: host
+    container_name: config-service
+    ports:
+      - "8888:8888"
+    expose:
+      - 8888
+
+  SpringBootZuulGatewayProxy:
+    image: apigatewayservice-app
+    build: SpringBootZuulGatewayProxy/
+    restart: always
+    network_mode: host
+    container_name: apigateway-service-docker
+    ports:
+      - "8093:8093"
+    expose:
+      - 8093
+  Muzix:
+    image: trackservice-app
+    build: Muzix/
+    restart: always
+    network_mode: host
+    container_name: track-service-docker
+    depends_on:
+      - mongo
+      - spring-config-server
+    ports:
+      - "8090:8090"
+    expose:
+      - 8090
+  User:
+    image: userservice-app
+    build: User/
+    restart: always
+    network_mode: host
+    container_name: user-service-docker
+    depends_on:
+      - mongo
+      - spring-config-server
+    ports:
+      - "8095:8095"
+    expose:
+      - 8095
